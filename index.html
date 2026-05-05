@@ -1,27 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amoah Gladys Asiedua - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gladys Amoah — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <h1>Amoah Gladys Asiedua</h1>
-        <p>Welcome to my portfolio</p>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Amoah Gladys Asiedua. This is my personal portfolio website.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: gladysaseiduaamoah@gmail.com</p>
-    </section>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">GA</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#entrepreneurship">Brands</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#portfolio" class="mobile-link">Work</a></li>
+      <li><a href="#entrepreneurship" class="mobile-link">Brands</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Gladys Amoah</h1>
+      <h2 class="hero-title">Web Developer &amp; UI/UX Designer<br /><span>— and Entrepreneur</span></h2>
+      <p class="hero-sub">I build digital experiences that solve real problems and leave lasting impressions.</p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="cv/Gladys_Amoah_CV.pdf" class="btn btn-outline" download>Download CV</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-avatar"><i class="fa-solid fa-user"></i></div>
+      <div class="hero-stat-cards">
+        <div class="hero-stat"><i class="fa-solid fa-star"></i><span>3+ Years Experience</span></div>
+        <div class="hero-stat"><i class="fa-solid fa-briefcase"></i><span>10+ Projects Delivered</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-frame">
+            <div class="image-placeholder">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-number">3+</span>
+            <span class="badge-text">Years of<br/>Experience</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">Turning Ideas Into<br/><em>Digital Reality</em></h2>
+          <p>Based in Ghana, I'm a passionate tech entrepreneur who discovered the power of technology to transform lives and businesses. My journey began with curiosity — a desire to understand how the digital world works — and grew into a full-fledged career in web development, design, and entrepreneurship.</p>
+          <p>I believe great design is not just about aesthetics; it's about solving problems elegantly. Every project I take on is an opportunity to create something meaningful.</p>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fa-solid fa-code"></i>
+              <span>Web Development</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-pen-nib"></i>
+              <span>UI/UX Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-chart-bar"></i>
+              <span>Data Analysis</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Innovation</span>
+            </div>
+          </div>
+          <div class="tools-row">
+            <span class="tool-tag">HTML &amp; CSS</span>
+            <span class="tool-tag">JavaScript</span>
+            <span class="tool-tag">Figma</span>
+            <span class="tool-tag">React</span>
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">Excel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title centered">Services I Offer</h2>
+      <p class="section-sub centered">From concept to launch — I deliver end-to-end digital solutions.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Website Development</h3>
+          <p>Clean, responsive, and performant websites built with modern technologies. From landing pages to full web applications.</p>
+          <ul class="service-list">
+            <li>Responsive Design</li>
+            <li>Performance Optimized</li>
+            <li>SEO Ready</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>User-centered design that balances beauty with function. I craft interfaces people love to use.</p>
+          <ul class="service-list">
+            <li>Wireframing &amp; Prototyping</li>
+            <li>User Research</li>
+            <li>Design Systems</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Brand &amp; Digital Solutions</h3>
+          <p>Cohesive brand identities and digital strategies that help businesses stand out and grow.</p>
+          <ul class="service-list">
+            <li>Logo &amp; Brand Identity</li>
+            <li>Social Media Design</li>
+            <li>Digital Strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-label">My Work</div>
+      <h2 class="section-title centered">Selected Projects</h2>
+      <p class="section-sub centered">A glimpse into the work I've crafted with care and precision.</p>
+      <div class="portfolio-grid">
+
+        <div class="project-card">
+          <div class="project-image pi-1">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/LESSON2" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>Lesson 2</h3>
+            <p>A project from my Tech4Girls journey using HTML.</p>
+            <div class="project-tools">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-2">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/lesson3" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>Lesson 3</h3>
+            <p>A project from my Tech4Girls journey using JavaScript.</p>
+            <div class="project-tools">
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-3">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/T4G_CV" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>T4G CV</h3>
+            <p>A project from my Tech4Girls journey using HTML.</p>
+            <div class="project-tools">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-4">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/T4G_Flexbox" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>T4G Flexbox</h3>
+            <p>A project from my Tech4Girls journey using HTML.</p>
+            <div class="project-tools">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-1">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/T4G_hmk" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>T4G Homework</h3>
+            <p>A project from my Tech4Girls journey using HTML.</p>
+            <div class="project-tools">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-2">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/T4G_lesson1" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>T4G Lesson 1</h3>
+            <p>A project from my Tech4Girls journey using HTML.</p>
+            <div class="project-tools">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-3">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/T4G_Project" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>T4G Project</h3>
+            <p>A project from my Tech4Girls journey using HTML.</p>
+            <div class="project-tools">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-4">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/T4G_Promptjs" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>T4G Prompt JS</h3>
+            <p>A project from my Tech4Girls journey.</p>
+            <div class="project-tools">
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-1">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/T4G_Tanis-signater-GLADYS" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Project</span>
+            <h3>T4G Signature Gladys</h3>
+            <p>A project from my Tech4Girls journey.</p>
+            <div class="project-tools">
+              <span>Project</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-2">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/Tech4Girls-" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Development</span>
+            <h3>Tech4Girls</h3>
+            <p>A project from my Tech4Girls journey using HTML.</p>
+            <div class="project-tools">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image pi-3">
+            <div class="project-overlay">
+              <a href="https://github.com/blessing3233/TFG_MAG" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-type">Web Design</span>
+            <h3>TFG MAG</h3>
+            <p>A project from my Tech4Girls journey using CSS.</p>
+            <div class="project-tools">
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTREPRENEURSHIP -->
+  <section id="entrepreneurship">
+    <div class="container">
+      <div class="section-label">Entrepreneurship</div>
+      <h2 class="section-title centered">My Brands</h2>
+      <p class="section-sub centered">Beyond tech, I build brands that empower and inspire.</p>
+      <div class="brands-grid">
+        <div class="brand-card">
+          <div class="brand-icon">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <div class="brand-content">
+            <div class="brand-tag">Fashion</div>
+            <h3>Corporate Chic by Trend Collection</h3>
+            <p>A fashion brand redefining professional style for the modern African woman. Corporate Chic blends elegance with contemporary trends — empowering women to show up confidently in every boardroom and beyond.</p>
+            <ul class="brand-highlights">
+              <li><i class="fa-solid fa-check"></i> Tailored for the professional woman</li>
+              <li><i class="fa-solid fa-check"></i> Afrocentric meets modern elegance</li>
+              <li><i class="fa-solid fa-check"></i> Quality craftsmanship</li>
+            </ul>
+          </div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-icon">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <div class="brand-content">
+            <div class="brand-tag">Beauty &amp; Personal Care</div>
+            <h3>Gladys Glow Liquid Soap</h3>
+            <p>A personal care brand rooted in natural ingredients and skin-loving formulas. Gladys Glow is crafted for those who believe self-care is a daily ritual — gentle, effective, and beautifully packaged.</p>
+            <ul class="brand-highlights">
+              <li><i class="fa-solid fa-check"></i> Natural &amp; skin-safe ingredients</li>
+              <li><i class="fa-solid fa-check"></i> Handcrafted with care</li>
+              <li><i class="fa-solid fa-check"></i> Affordable luxury</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV DOWNLOAD -->
+  <section id="cv">
+    <div class="container">
+      <div class="cv-banner">
+        <div class="cv-text">
+          <h2>Ready to work together?</h2>
+          <p>Download my CV to learn more about my experience, education, and skills.</p>
+        </div>
+        <a href="cv/Gladys_Amoah_CV.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i> Download My CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title centered">Let's Work Together</h2>
+      <p class="section-sub centered">Have a project in mind? I'd love to hear from you.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:gladysaseiduaamoah@gmail.com">gladysaseiduaamoah@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+233000000000">+233 000 000 000</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span>Accra, Ghana</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">Gladys Amoah</p>
+        <p class="footer-copy">&copy; 2026 Gladys Amoah. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
