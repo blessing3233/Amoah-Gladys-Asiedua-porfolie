@@ -635,7 +635,11 @@ img { max-width: 100%; display: block; }
 .pi-lesson2 { background-image: url('https://tse1.mm.bing.net/th/id/OIP.Wlh7V7OhMKngqczR7GSJVAHaEO?pid=Api&h=220&P=0'); }
 .pi-cv { background-image: url('https://blessing3233.github.io/T4G_CV/images/9748334f-ef75-44b6-b775-9334c0ff05f6.png'); }
 .pi-hmk { background-image: url('https://blessing3233.github.io/T4G_hmk/images/GTU.png'); background-size: contain; background-position: center; background-repeat: no-repeat; }
-.pi-project { background-image: url('https://blessing3233.github.io/T4G_Project/images/vd.jpg'); }
+.pi-project { 
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.5) 0%, rgba(199, 21, 133, 0.5) 100%), url('https://blessing3233.github.io/T4G_Project/images/TA.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .project-overlay {
   position: absolute;
