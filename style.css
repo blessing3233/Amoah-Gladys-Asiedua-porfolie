@@ -627,6 +627,11 @@ img { max-width: 100%; display: block; }
 .pi-2 { background: linear-gradient(135deg, #1A3A6E 0%, var(--blush-deep) 100%); }
 .pi-3 { background: linear-gradient(135deg, var(--sky-soft) 0%, var(--gold) 100%); }
 .pi-4 { background: linear-gradient(135deg, var(--sky-dark) 0%, var(--sky-soft) 60%, var(--gold-pale) 100%); }
+.pi-flexbox {
+  background-image: url('https://blessing3233.github.io/T4G_Flexbox/images/0434f859c0b1f0cfa18d6ca61035aed7.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .project-overlay {
   position: absolute;
